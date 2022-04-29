@@ -46,7 +46,7 @@ Feature: Automation Login Feature
       #| rj123@gmail.com          | rj123    |
       
       
-  #(3)----------------Simple data driven - with table-----------*
+  #(3)*----------------Simple data driven - with table-----------*
   
   Scenario: Automation Login Test Scenario
     Given user is already on login page
