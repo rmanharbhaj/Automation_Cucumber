@@ -51,5 +51,16 @@ public class AutomationLoginMapstepDefinations {
 	public void mapuser_quit() {
 	    driver.quit();
 	}
+	
+
+		@Given("^user is on Sign in page$")
+		public void user_is_on_Sign_in_page() {
+		    System.out.println("user is on sign in page");
+		}
+
+		@Given("^user is Home page$")
+		public void user_is_Home_page(){
+			System.out.println("user is on home page");
+		}
 
 }
