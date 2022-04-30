@@ -32,29 +32,33 @@ Feature: Automation Login Feature
 		
  #(2)----------------Simple data driven - with examples + Scenario Outline-----------*	
  
-	#Scenario Outline: Automation Login Test Scenario
-    #Given user is already on login page
-    #When title is "Login - My Store"
-    #Then user enters "<username>" and "<password>"
-    #Then user clicks on signIn button
-    #Then user is on home page
-#		Then user quit
-#		
- #Examples: 
-      #| username | password | 
-      #| rmanharbhaj@thebrick.com | Ridje123 | 
-      #| rj123@gmail.com          | rj123    |
-      
-      
-  #(3)*----------------Simple data driven - with table-----------*
-  
-  Scenario: Automation Login Test Scenario
+	Scenario Outline: Automation Login Test Scenario
     Given user is already on login page
     When title is "Login - My Store"
-    Then user enters username and passsword
-    | rmanharbhaj@thebrick.com | Ridje123 | 
-    #| rj123@gmail.com          | rj123    |
+    Then user enters "<username>" and "<password>"
     Then user clicks on signIn button
     Then user is on home page
 		Then user quit
+		
+ Examples: 
+      | username | password | 
+      | rmanharbhaj@thebrick.com | Ridje123 | 
+      | rj123@gmail.com          | rj123    |
+      
+      
+  #(3)*----------------Simple data driven - with table(with list object)-----------*
+  
+  #Scenario: Automation Login Test Scenario
+    #Given user is already on login page
+    #When title is "Login - My Store"
+    #Then user enters username and passsword
+    #| rmanharbhaj@thebrick.com | Ridje123 | 
+    #| rj123@gmail.com          | rj123    |
+    #Then user clicks on signIn button
+    #Then user is on home page
+#		Then user quit
+		
+		
+		
+
 

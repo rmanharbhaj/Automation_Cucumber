@@ -30,21 +30,23 @@ public class AutomationLoginStepDefinations {
 	    System.out.println(actual);
 	    Assert.assertEquals(title, actual);
 	}
-// it works for first 2 ways(without examples and with examples+outline)
+// it works for first [2] ways(1) and (2)in feature file (without examples and with examples+outline)
 	
-//	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
-//	public void user_enters_and(String user ,String pass){
-//	    driver.findElement(By.id("email")).sendKeys(user);
-//	    driver.findElement(By.id("passwd")).sendKeys(pass);
-//	}
-	
-	@Then("^user enters username and passsword$")
-	public void user_enters_username_and_passsword(DataTable LoginData) {
-		List<List<String>> data=LoginData.raw();
-		driver.findElement(By.id("email")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.id("passwd")).sendKeys(data.get(0).get(1));
-	    
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String user ,String pass){
+	    driver.findElement(By.id("email")).sendKeys(user);
+	    driver.findElement(By.id("passwd")).sendKeys(pass);
 	}
+	
+	
+	// it works for (3) in feature file(without examples and with examples+outline)
+//	@Then("^user enters username and passsword$")
+//	public void user_enters_username_and_passsword(DataTable LoginData) {
+//		List<List<String>> data=LoginData.raw();
+//		driver.findElement(By.id("email")).sendKeys(data.get(0).get(0));
+//		driver.findElement(By.id("passwd")).sendKeys(data.get(0).get(1));
+//	    
+//	}
 
 	@Then("^user clicks on signIn button$")
 	public void user_clicks_on_signIn_button() {

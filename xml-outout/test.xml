@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.505986">
-    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario" time="10.505986">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="41.980811">
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario" time="10.079421">
         <system-out><![CDATA[Given user is already on login page.........................................passed
 When title is "Login - My Store"............................................passed
-Then user enters username and passsword.....................................passed
+Then user enters "rmanharbhaj@thebrick.com" and "Ridje123"..................passed
 Then user clicks on signIn button...........................................passed
 Then user is on home page...................................................passed
 Then user quit..............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario 2" time="17.146658">
+        <system-out><![CDATA[Given user is already on login page.........................................passed
+When title is "Login - My Store"............................................passed
+Then user enters "rj123@gmail.com" and "rj123"..............................passed
+Then user clicks on signIn button...........................................passed
+Then user is on home page...................................................passed
+Then user quit..............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Automation LoginMap Feature" name="Automation LoginMap Test Scenario" time="14.754732">
+        <system-out><![CDATA[Given Mapuser is already on login page......................................passed
+When Maptitle is "Login - My Store".........................................passed
+Then Mapuser enters username and passsword..................................passed
+Then Mapuser quit...........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
