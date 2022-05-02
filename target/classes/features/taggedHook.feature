@@ -16,27 +16,21 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@FunctionalTest
-Feature: Automation LoginMap Feature
+@tag
+Feature: Dresses page Test
+  
 
-
-@SmokeTest @RegressionTest
- Scenario: Automation LoginMap Test Scenario
- 
-    Given Mapuser is already on login page
-    When Maptitle is "Login - My Store"
-    Then Mapuser enters username and passsword
-    |username                  |password|
-    | rmanharbhaj@thebrick.com | Ridje123 | 
-    | rj123@gmail.com          | rj123    |
+  @Contact
+  Scenario: 
+    Given ruser is on home page and hometitle is "My account - My Store"
+    Then user clicks on contact page
+    Then user enter details
+    Then user clicks on send button
     
-		Then Mapuser quit
+   @Dresses
+  Scenario:
+    Given duser is on dresses page and title is "Dresses - My Store"
+    Then user clicks on casual dresses
+    Then user checked the any size checkbox
 
-@SmokeTest @SanityTest	
-Scenario: Automation sign in Test
-		Given user is on Sign in page	
-		
-	
-Scenario: Automation Home Page Test
-		Given user is Home page		
-		
+  

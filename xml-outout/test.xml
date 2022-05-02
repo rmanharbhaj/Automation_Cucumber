@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.281448">
-    <testcase classname="Automation LoginMap Feature" name="Automation LoginMap Test Scenario" time="13.281237">
-        <system-out><![CDATA[Given Mapuser is already on login page......................................passed
-When Maptitle is "Login - My Store".........................................passed
-Then Mapuser enters username and passsword..................................passed
-Then Mapuser quit...........................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.551751">
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario" time="7.43506">
+        <system-out><![CDATA[Given user is already on login page.........................................passed
+When title is "Login - My Store"............................................passed
+Then user enters "rmanharbhaj@thebrick.com" and "Ridje123"..................passed
+Then user clicks on signIn button...........................................passed
+Then user is on home page...................................................passed
+Then user quit..............................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Automation LoginMap Feature" name="Automation sign in Test" time="0.000211">
-        <system-out><![CDATA[Given user is on Sign in page...............................................passed
+    <testcase classname="Automation Login Feature" name="Automation Login Test Scenario 2" time="6.116691">
+        <system-out><![CDATA[Given user is already on login page.........................................passed
+When title is "Login - My Store"............................................passed
+Then user enters "rj123@gmail.com" and "rj123"..............................passed
+Then user clicks on signIn button...........................................passed
+Then user is on home page...................................................passed
+Then user quit..............................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

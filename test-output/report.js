@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("map.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/rjghori/eclipse-workspace/AutomationCucumberProject/src/main/java/features/Automation_Login.feature");
 formatter.feature({
   "comments": [
     {
@@ -74,135 +74,319 @@ formatter.feature({
       "value": "#Sample Feature Definition Template"
     }
   ],
-  "line": 19,
-  "name": "Automation LoginMap Feature",
+  "line": 20,
+  "name": "Automation Login Feature",
   "description": "",
-  "id": "automation-loginmap-feature",
+  "id": "automation-login-feature",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 23,
-  "name": "Automation LoginMap Test Scenario",
-  "description": "",
-  "id": "automation-loginmap-feature;automation-loginmap-test-scenario",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
+formatter.scenarioOutline({
+  "comments": [
     {
-      "line": 22,
-      "name": "@SmokeTest"
+      "line": 23,
+      "value": "#(1)----------------Simple data driven - without examples-----------*"
     },
     {
-      "line": 22,
-      "name": "@RegressionTest"
+      "line": 25,
+      "value": "#Scenario: Automation Login Test Scenario"
+    },
+    {
+      "line": 26,
+      "value": "#Given user is already on login page"
+    },
+    {
+      "line": 27,
+      "value": "#When title is \"Login - My Store\""
+    },
+    {
+      "line": 28,
+      "value": "#Then user enters \"rmanharbhaj@thebrick.com\" and \"Ridje123\""
+    },
+    {
+      "line": 29,
+      "value": "#Then user clicks on signIn button"
+    },
+    {
+      "line": 30,
+      "value": "#Then user is on home page"
+    },
+    {
+      "line": 31,
+      "value": "#Then user quit"
+    },
+    {
+      "line": 33,
+      "value": "#(2)----------------Simple data driven - with examples + Scenario Outline-----------*"
     }
-  ]
+  ],
+  "line": 35,
+  "name": "Automation Login Test Scenario",
+  "description": "",
+  "id": "automation-login-feature;automation-login-test-scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 25,
-  "name": "Mapuser is already on login page",
+  "line": 36,
+  "name": "user is already on login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 26,
-  "name": "Maptitle is \"Login - My Store\"",
+  "line": 37,
+  "name": "title is \"Login - My Store\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 27,
-  "name": "Mapuser enters username and passsword",
+  "line": 38,
+  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "user clicks on signIn button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 41,
+  "name": "user quit",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 43,
+  "name": "",
+  "description": "",
+  "id": "automation-login-feature;automation-login-test-scenario;",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 28
+      "line": 44,
+      "id": "automation-login-feature;automation-login-test-scenario;;1"
     },
     {
       "cells": [
         "rmanharbhaj@thebrick.com",
         "Ridje123"
       ],
-      "line": 29
+      "line": 45,
+      "id": "automation-login-feature;automation-login-test-scenario;;2"
     },
     {
       "cells": [
         "rj123@gmail.com",
         "rj123"
       ],
-      "line": 30
+      "line": 46,
+      "id": "automation-login-feature;automation-login-test-scenario;;3"
     }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 45,
+  "name": "Automation Login Test Scenario",
+  "description": "",
+  "id": "automation-login-feature;automation-login-test-scenario;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 36,
+  "name": "user is already on login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 37,
+  "name": "title is \"Login - My Store\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 38,
+  "name": "user enters \"rmanharbhaj@thebrick.com\" and \"Ridje123\"",
+  "matchedColumns": [
+    0,
+    1
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 32,
-  "name": "Mapuser quit",
+  "line": 39,
+  "name": "user clicks on signIn button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 41,
+  "name": "user quit",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AutomationLoginMapstepDefinations.mapuser_is_already_on_login_page()"
+  "location": "AutomationLoginStepDefinations.user_is_already_on_login_page()"
 });
 formatter.result({
-  "duration": 5251796666,
+  "duration": 5439796084,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Login - My Store",
-      "offset": 13
+      "offset": 10
     }
   ],
-  "location": "AutomationLoginMapstepDefinations.maptitle_is(String)"
+  "location": "AutomationLoginStepDefinations.title_is(String)"
 });
 formatter.result({
-  "duration": 18404375,
+  "duration": 18322000,
   "status": "passed"
 });
 formatter.match({
-  "location": "AutomationLoginMapstepDefinations.mapuser_enters_username_and_passsword(DataTable)"
+  "arguments": [
+    {
+      "val": "rmanharbhaj@thebrick.com",
+      "offset": 13
+    },
+    {
+      "val": "Ridje123",
+      "offset": 44
+    }
+  ],
+  "location": "AutomationLoginStepDefinations.user_enters_and(String,String)"
 });
 formatter.result({
-  "duration": 7930404250,
+  "duration": 356475917,
   "status": "passed"
 });
 formatter.match({
-  "location": "AutomationLoginMapstepDefinations.mapuser_quit()"
+  "location": "AutomationLoginStepDefinations.user_clicks_on_signIn_button()"
 });
 formatter.result({
-  "duration": 80631750,
+  "duration": 1528053458,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutomationLoginStepDefinations.user_is_on_home_page()"
+});
+formatter.result({
+  "duration": 5760916,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutomationLoginStepDefinations.user_quit()"
+});
+formatter.result({
+  "duration": 86651583,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 35,
-  "name": "Automation sign in Test",
+  "line": 46,
+  "name": "Automation Login Test Scenario",
   "description": "",
-  "id": "automation-loginmap-feature;automation-sign-in-test",
+  "id": "automation-login-feature;automation-login-test-scenario;;3",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 34,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 34,
-      "name": "@SanityTest"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 36,
-  "name": "user is on Sign in page",
+  "name": "user is already on login page",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 37,
+  "name": "title is \"Login - My Store\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 38,
+  "name": "user enters \"rj123@gmail.com\" and \"rj123\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "user clicks on signIn button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 41,
+  "name": "user quit",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "AutomationLoginMapstepDefinations.user_is_on_Sign_in_page()"
+  "location": "AutomationLoginStepDefinations.user_is_already_on_login_page()"
 });
 formatter.result({
-  "duration": 210833,
+  "duration": 4312465000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Login - My Store",
+      "offset": 10
+    }
+  ],
+  "location": "AutomationLoginStepDefinations.title_is(String)"
+});
+formatter.result({
+  "duration": 18847958,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "rj123@gmail.com",
+      "offset": 13
+    },
+    {
+      "val": "rj123",
+      "offset": 35
+    }
+  ],
+  "location": "AutomationLoginStepDefinations.user_enters_and(String,String)"
+});
+formatter.result({
+  "duration": 351055833,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutomationLoginStepDefinations.user_clicks_on_signIn_button()"
+});
+formatter.result({
+  "duration": 1347789458,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutomationLoginStepDefinations.user_is_on_home_page()"
+});
+formatter.result({
+  "duration": 9141375,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutomationLoginStepDefinations.user_quit()"
+});
+formatter.result({
+  "duration": 77391708,
   "status": "passed"
 });
 });

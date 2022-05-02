@@ -16,6 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
+@FunctionalTest
 Feature: Automation LoginMap Feature
 
 
